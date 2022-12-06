@@ -1,0 +1,14 @@
+[
+{
+  "model": "product.productspecification",
+  "pk": 1,
+  "fields": {
+    "capacity": "128Gb",
+    "weight_dimensions": "179g",
+    "display": "Full Hd display",
+    "chip": "34mm",
+    "camera": "Camera 25MEga pixel",
+    "video_recording": "HD recoding"
+  }
+}
+]

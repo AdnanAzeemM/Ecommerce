@@ -1,0 +1,16 @@
+[
+{
+  "model": "product.category",
+  "pk": 1,
+  "fields": {
+    "name": "Mobiles"
+  }
+},
+{
+  "model": "product.category",
+  "pk": 2,
+  "fields": {
+    "name": "Tab"
+  }
+}
+]

@@ -1,0 +1,10 @@
+__pycache__
+venv
+env
+*.sqlite3
+.vscode/
+exit()
+exit
+^X
+Quit
+

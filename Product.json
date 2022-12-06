@@ -1,0 +1,66 @@
+[
+{
+  "model": "product.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "company": 3,
+    "img": "pics/lumia-532_Rur60ax.png",
+    "offer": "55",
+    "name": "Samsung Galaxy 2020 256Gb",
+    "specification": 1,
+    "discount_price": "55000.00",
+    "price": "100000.00",
+    "trending": true,
+    "Slider": true
+  }
+},
+{
+  "model": "product.product",
+  "pk": 2,
+  "fields": {
+    "category": 2,
+    "company": 4,
+    "img": "pics/ipad-air_be898K6.png",
+    "offer": "30%",
+    "name": "Q_TAB 8832 HD Screen",
+    "specification": 1,
+    "discount_price": "3400.00",
+    "price": "5000.00",
+    "trending": true,
+    "Slider": true
+  }
+},
+{
+  "model": "product.product",
+  "pk": 3,
+  "fields": {
+    "category": 2,
+    "company": 4,
+    "img": "pics/galaxy-tab2.png",
+    "offer": "25%",
+    "name": "Q-TAb New One",
+    "specification": 1,
+    "discount_price": "5600.00",
+    "price": "6500.00",
+    "trending": true,
+    "Slider": true
+  }
+},
+{
+  "model": "product.product",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "company": 2,
+    "img": "pics/iphone-se.png",
+    "offer": "20%",
+    "name": "Oppo 2020 128Gb",
+    "specification": 1,
+    "discount_price": "6700.00",
+    "price": "7500.00",
+    "trending": false,
+    "Slider": true
+  }
+}
+]

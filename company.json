@@ -1,0 +1,43 @@
+
+[
+{
+  "model": "product.company",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "Company_name": "Vivo"
+  }
+},
+{
+  "model": "product.company",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "Company_name": "Oppo"
+  }
+},
+{
+  "model": "product.company",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "Company_name": "Samsung"
+  }
+},
+{
+  "model": "product.company",
+  "pk": 4,
+  "fields": {
+    "category": 2,
+    "Company_name": "Q-Tab"
+  }
+},
+{
+  "model": "product.company",
+  "pk": 5,
+  "fields": {
+    "category": 2,
+    "Company_name": "Samsung-TAb"
+  }
+}
+]
