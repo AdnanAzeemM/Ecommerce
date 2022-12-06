@@ -11,6 +11,12 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+import environ
+
+
+# Initialise environment variables
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)on(_yvt5%)^m=z!#tez+0&w=cto!yh$to%rk3gv2(jsk$a=4r'
+SECRET_KEY = env('SECRET_KEY'),
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -82,11 +88,11 @@ WSGI_APPLICATION = 'Ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myproject',
-        'USER': 'myprojectuser',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('USER'),
+        'PASSWORD': env('PASSWORD'),
+        'HOST': env('HOST'),
+        'PORT': env('PORT'),
     }
 }
 
@@ -136,14 +142,9 @@ PIC_UP_PATH = 'pics/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# djangostripe/settings.py
-# STRIPE_PUBLISHABLE_KEY = 'pk_test_51M9lXNAu20KPGQVKirUJ5qAntdAmiZfCLzt4ivVwkJHsguaEKJ0Og87y1ZsYVR8IP5Qa1EzVwEz2lmIWGySiqnvz00AByzAiTR'
-# STRIPE_SECRET_KEY = 'sk_test_51M9lXNAu20KPGQVK493YE8SBmAmgv2uCGgWjkkth7puILci4xKYj8jw4h7QlKAjgBZuuUI5NSLsZT1AIF1xSGPQP00jfZx93u3'
-# STRIPE_TEST_PUBLIC_KEY = os.environ.get("STRIPE_TEST_PUBLIC_KEY", "pk_test_51M9lXNAu20KPGQVKirUJ5qAntdAmiZfCLzt4ivVwkJHsguaEKJ0Og87y1ZsYVR8IP5Qa1EzVwEz2lmIWGySiqnvz00AByzAiTR")
-# STRIPE_TEST_SECRET_KEY = os.environ.get("STRIPE_TEST_SECRET_KEY", "sk_test_51M9lXNAu20KPGQVK493YE8SBmAmgv2uCGgWjkkth7puILci4xKYj8jw4h7QlKAjgBZuuUI5NSLsZT1AIF1xSGPQP00jfZx93u3")
-# STRIPE_LIVE_MODE = False
 
 
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51M9lXNAu20KPGQVKirUJ5qAntdAmiZfCLzt4ivVwkJHsguaEKJ0Og87y1ZsYVR8IP5Qa1EzVwEz2lmIWGySiqnvz00AByzAiTR'
-STRIPE_SECRET_KEY = 'sk_test_51M9lXNAu20KPGQVK493YE8SBmAmgv2uCGgWjkkth7puILci4xKYj8jw4h7QlKAjgBZuuUI5NSLsZT1AIF1xSGPQP00jfZx93u3'
+#Stripe key
+STRIPE_PUBLISHABLE_KEY = env('STRIPE_PUBLISHABLE_KEY'),
+STRIPE_SECRET_KEY = env('STRIPE_SECRET_KEY'),
 
